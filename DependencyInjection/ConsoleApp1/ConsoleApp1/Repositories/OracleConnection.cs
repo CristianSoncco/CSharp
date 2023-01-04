@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1.Repositories
 {
-    public class OracleConnection
+    public class OracleConnection: IDbConnection
     {
     }
 }
