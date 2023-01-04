@@ -6,8 +6,12 @@ namespace ConsoleApp1.Repositories
 {
     public class CustomerRepository
     {
-        private MySQLConnection _connection;
+        private IDbConnection _connection;
 
+        public CustomerRepository(IDbConnection connection)
+        {
+            _connection = connection;
+        }
         public CustomerRepository()
         {
             _connection = new MySQLConnection();
