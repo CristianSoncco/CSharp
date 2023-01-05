@@ -20,6 +20,8 @@ namespace ConsoleApp1.Repositories
         {
             if (_connection.GetType() == typeof(MySQLConnection))
                 Console.WriteLine("Obtenemos clientes desde MySQL");
+            else if (_connection.GetType() == typeof(OracleConnection))
+                Console.WriteLine("Obtenemos clientes desde Oracle");
 
             return new List<Customer>
             {
