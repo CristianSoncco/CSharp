@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Services;
+﻿using ConsoleApp1.Repositories;
+using ConsoleApp1.Services;
 using System;
 
 namespace ConsoleApp1
@@ -7,7 +8,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var customerService = new CustomerService();
+            var connection = new OracleConnection();
+
+            var repository = new CustomerRepository(connection);
+
+            var customerService = new CustomerService(repository);
+
             var communicationService = new CommunicationService();
 
             var customers = customerService.GetCustomers();
