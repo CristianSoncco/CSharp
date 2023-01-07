@@ -12,10 +12,7 @@ namespace ConsoleApp1.Repositories
         {
             _connection = connection;
         }
-        public CustomerRepository()
-        {
-            _connection = new MySQLConnection();
-        }
+
         public List<Customer> GetCustomers()
         {
             if (_connection.GetType() == typeof(MySQLConnection))
