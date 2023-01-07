@@ -7,12 +7,12 @@ namespace ConsoleApp1.Services
 {
     public class CustomerService
     {
-        private CustomerRepository _repository;
+        private IRepository _repository;
         private IDbConnection _connection = new OracleConnection();
 
-        public CustomerService()
+        public CustomerService(IRepository repository)
         {
-            _repository = new CustomerRepository(_connection);
+            _repository = repository;
         }
 
         public List<Customer> GetCustomers()
