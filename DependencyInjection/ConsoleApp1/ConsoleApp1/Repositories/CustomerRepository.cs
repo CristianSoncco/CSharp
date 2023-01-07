@@ -23,7 +23,7 @@ namespace ConsoleApp1.Repositories
             return new List<Customer>
             {
                 new Customer(){Id=1,Name="Papa Hut",Email="papa@gut.com",Phone="978465132"},
-                new Customer(){Id=1,Name="Pep Col",Email="pep@col.com",Phone="978321456"}
+                new Customer(){Id=2,Name="Pep Col",Email="pep@col.com",Phone="978321456"}
 
             };
         }
