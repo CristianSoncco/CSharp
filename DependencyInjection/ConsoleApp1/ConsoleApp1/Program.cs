@@ -14,7 +14,9 @@ namespace ConsoleApp1
 
             var customerService = new CustomerService(repository);
 
-            var communicationService = new CommunicationService();
+            var sender = new EmailService();
+
+            var communicationService = new CommunicationService(sender);
 
             var customers = customerService.GetCustomers();
 

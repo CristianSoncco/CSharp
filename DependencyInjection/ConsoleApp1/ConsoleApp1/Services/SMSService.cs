@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1.Services
 {
-    public class SMSService
+    public class SMSService : ISender
     {
         public void Send(Customer customer, string message)
         {
