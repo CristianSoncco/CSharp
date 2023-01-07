@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1.Repositories
 {
-    public class CustomerRepository
+    public class CustomerRepository : IRepository
     {
         private IDbConnection _connection;
 
