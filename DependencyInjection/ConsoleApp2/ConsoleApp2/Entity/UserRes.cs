@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConsoleApp2.Entity
 {
-    public class Response
+    public class UserRes
     {
         public int page { get; set; }
         public int per_page { get; set; }
