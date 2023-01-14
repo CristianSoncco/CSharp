@@ -12,5 +12,11 @@ namespace ConsoleApp2.Services
             Console.WriteLine($"Se imprime en impresora laser el nombre {pokemon.name}.");
             Console.WriteLine(message);
         }
+
+        public void Print(User user, string message)
+        {
+            Console.WriteLine($"Se imprime en impresora laser el nombre {user.first_name}, {user.last_name}");
+            Console.WriteLine(message);
+        }
     }
 }

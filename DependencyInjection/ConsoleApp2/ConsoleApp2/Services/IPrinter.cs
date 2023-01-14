@@ -8,5 +8,7 @@ namespace ConsoleApp2.Services
     public interface IPrinter
     {
         void Print(Pokemon pokemon, string message);
+
+        void Print(User pokemon, string message);
     }
 }

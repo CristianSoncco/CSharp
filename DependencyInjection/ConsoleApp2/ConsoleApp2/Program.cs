@@ -15,12 +15,6 @@ namespace ConsoleApp2
 {
     class Program
     {
-        static void ShowProduct(User user)
-        {
-            Console.WriteLine($"First_Name: {user.first_name}, Last_Name: " +
-                $"{user.last_name}. Email: {user.email}");
-        }
-
         static async Task Main(string[] args)
         {
             /*
@@ -40,15 +34,15 @@ namespace ConsoleApp2
 
             foreach (var item in listUsers)
             {
-                ShowProduct(item);
+                printer1.Print(item, "⛑");
             }
             foreach (var item in listPokemons)
             {
-                printer1.Print(item,"Certificado el pokemon.");    
+                printer1.Print(item, "☼");    
             }
             foreach (var item in listPokeItems)
             {
-                printer2.Print(item,"No Certificado el item.");
+                printer2.Print(item, "🀆");
             }   
         }
     }
